@@ -54,3 +54,21 @@ for y in range(50,200,25):\n\
     editor.setValue(s);
 
 }
+
+function ex3(){
+    var s = "\
+import turtle\n\
+import random\n\
+t = turtle.Turtle()\n\
+\n\
+t.speed('fastest')\n\
+\
+x = 1\n\
+\
+while True:\n\
+    t.left(random.randint(20,120))\n\
+    t.forward(random.randint(20,50))";
+
+    editor.setValue(s);
+
+}
