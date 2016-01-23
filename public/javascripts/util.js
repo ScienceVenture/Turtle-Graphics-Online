@@ -17,8 +17,14 @@ function switchDisplay(target){
 
 function resetCode(){
 
-    $("#yourcode").text("import turtle\nt = turtle.Turtle()\n\nt.forward(100)\nprint 'hello!'");
+    if(confirm("This will delete any code you have written, are you sure you would like to reset?") == true){
+        resetCodeHidden();
+    }
 
+}
+
+function resetCodeHidden(){
+    editor.setValue("import turtle\nt = turtle.Turtle()\n\nt.forward(100)\nprint 'hello!'");
 }
 function hideError(){
     $("#errorMessage").hide();
@@ -37,4 +43,4 @@ function runit(){
 // Call these when the file is loaded
 hideError();
 switchDisplay("#mycanvas");
-resetCode();
+resetCodeHidden();

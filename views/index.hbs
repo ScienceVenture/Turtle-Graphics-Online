@@ -5,24 +5,25 @@
 
             <div class="row">
                 <div class="col-lg-4">
-                        <div class="row">
-                            <div class="col-lg-12">
-                                <div id="yourcode"></div>
-                            </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div id="yourcode"></div>
                         </div>
-                        <br>
-                        <div class="row">
-                            <div class="col-lg-12">
-                                <button class="btn btn-success" type="button" onclick="runit()">Run</button>
-                                <button class="btn btn-danger" type="button" onclick="resetCode()">Reset</button>
-                            </div>
+                    </div>
+                    <br>
+
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <button class="btn btn-success" type="button" onclick="runit()">Run</button>
                         </div>
-                        <br>
-                        <div class="row">
-                            <div class="col-lg-12">
-                                <div id='errorMessage' class="alert alert-danger"></div>
-                            </div>
+                    </div>
+                    <br>
+
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div id='errorMessage' class="alert alert-danger"></div>
                         </div>
+                    </div>
                 </div>
                 <div class="col-lg-5">
                     <!-- If you want turtle graphics include a canvas -->
@@ -42,5 +43,65 @@
                 </div>
             </div>
         </div>
+    </div>
+
+    <div class="row">
+
+        <div class="col-xs-10">
+
+            <h2>Turtle Graphics</h2>
+
+            <p>
+                <a href="https://docs.python.org/2/library/turtle.html">Turtle graphics</a> is a simple Python library
+                that supports drawing shapes using a cursor.
+                This web application is meant to be used for learning the python programming language through the use
+                of the Turtle graphics library.
+            </p>
+
+            <h3>Examples</h3>
+
+            <p>Here are a few simple examples to get started:</p>
+
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="media">
+                        <div class="media-left">
+                            <img class="media-object" src="/images/ex1.png" style="width:64px; height:64px;">
+                        </div>
+                        <div class="media-body row">
+                            <div class="col-sm-6">
+                                <h4 class="media-heading">Triangles</h4>
+
+                                <p>Uses loops to repeatedly draw triangles!</p>
+                            </div>
+                            <div class="col-sm-6" style="padding-top:10px;">
+                                <button class='button btn-sm btn-primary' onclick="ex1();">Load Example</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-sm-6">
+                    <div class="media">
+                        <div class="media-left">
+                            <img class="media-object" src="/images/ex2.png" style="width:64px; height:64px;">
+                        </div>
+                        <div class="media-body row">
+                            <div class="col-sm-6">
+                                <h4 class="media-heading">Squares</h4>
+
+                                <p>Uses loops to repeatedly draw squares!</p>
+                            </div>
+                            <div class="col-sm-6" style="padding-top:10px;">
+                                <button class='button btn-sm btn-primary' onclick="ex2();">Load Example</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
     </div>
 </div>
