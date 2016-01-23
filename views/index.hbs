@@ -1,0 +1,35 @@
+<div class="container">
+    <div class="row">
+        <div class="col-xs-offset-1 col-xs-10">
+            <h1>Turtle Graphics Online</h1>
+
+            <div class="row">
+                <div class="col-sm-4">
+                    <form class="form-horizontal">
+                    <textarea class="form-control" id="yourcode" cols="50" rows="15">
+import turtle
+t = turtle.Turtle()
+t.forward(100)
+                    </textarea>
+                        <br/>
+                        <button class="btn btn-success" type="button" onclick="runit()">Run</button>
+                    </form>
+                </div>
+                <div class="col-sm-5">
+                        <!-- If you want turtle graphics include a canvas -->
+                        <div style="padding-left:10px;">
+                            <div id="mycanvas"></div>
+                        </div>
+                        <pre id="output"></pre>
+                </div>
+
+                <div class="col-sm-2" style="margin-left:20px;">
+                    <ul class="nav nav-pills nav-stacked">
+                        <li id='mycanvas-button' role="presentation" class="active" onclick="switchDisplay('#mycanvas')"><a href="#">Canvas</a></li>
+                        <li id='output-button' role="presentation" onclick="switchDisplay('#output')"><a href="#">Output</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
