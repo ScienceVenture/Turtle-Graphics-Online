@@ -15,4 +15,26 @@ function switchDisplay(target){
     $(target+'-button').addClass('active');
 }
 
+function resetCode(){
+
+    $("#yourcode").text("import turtle\nt = turtle.Turtle()\n\nt.forward(100)\nprint 'hello!'");
+
+}
+function hideError(){
+    $("#errorMessage").hide();
+}
+
+function showError(msg){
+    $("#errorMessage").text("You have an error in your program:\n"+msg);
+    $("#errorMessage").show();
+}
+
+function runit(){
+    hideError();
+    runitHidden();
+}
+
+// Call these when the file is loaded
+hideError();
 switchDisplay("#mycanvas");
+resetCode();

@@ -4,29 +4,40 @@
             <h1>Turtle Graphics Online</h1>
 
             <div class="row">
-                <div class="col-sm-4">
-                    <form class="form-horizontal">
-                    <textarea class="form-control" id="yourcode" cols="50" rows="15">
-import turtle
-t = turtle.Turtle()
-t.forward(100)
-                    </textarea>
-                        <br/>
-                        <button class="btn btn-success" type="button" onclick="runit()">Run</button>
-                    </form>
-                </div>
-                <div class="col-sm-5">
-                        <!-- If you want turtle graphics include a canvas -->
-                        <div style="padding-left:10px;">
-                            <div id="mycanvas"></div>
+                <div class="col-lg-4">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div id="yourcode"></div>
+                            </div>
                         </div>
-                        <pre id="output"></pre>
+                        <br>
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <button class="btn btn-success" type="button" onclick="runit()">Run</button>
+                                <button class="btn btn-danger" type="button" onclick="resetCode()">Reset</button>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div id='errorMessage' class="alert alert-danger"></div>
+                            </div>
+                        </div>
+                </div>
+                <div class="col-lg-5">
+                    <!-- If you want turtle graphics include a canvas -->
+                    <div style="padding-left:10px;">
+                        <div id="mycanvas"></div>
+                    </div>
+                    <pre id="output"></pre>
                 </div>
 
-                <div class="col-sm-2" style="margin-left:20px;">
+                <div class="col-lg-2" style="margin-left:20px;">
                     <ul class="nav nav-pills nav-stacked">
-                        <li id='mycanvas-button' role="presentation" class="active" onclick="switchDisplay('#mycanvas')"><a href="#">Canvas</a></li>
-                        <li id='output-button' role="presentation" onclick="switchDisplay('#output')"><a href="#">Output</a></li>
+                        <li id='mycanvas-button' role="presentation" class="active"
+                            onclick="switchDisplay('#mycanvas')"><a href="#">Canvas</a></li>
+                        <li id='output-button' role="presentation" onclick="switchDisplay('#output')"><a
+                                href="#">Output</a></li>
                     </ul>
                 </div>
             </div>
