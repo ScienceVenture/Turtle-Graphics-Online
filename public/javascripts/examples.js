@@ -72,3 +72,26 @@ while True:\n\
     editor.setValue(s);
 
 }
+
+function buggy1(){
+    $.get( "examples/buggy1.txt", function( data ) {
+        editor.setValue(data);
+    });
+}
+
+function buggy2(){
+    $.get( "examples/buggy2.txt", function( data ) {
+        editor.setValue(data);
+    });
+}
+function buggy3(){
+    $.get( "examples/buggy3.txt", function( data ) {
+        editor.setValue(data);
+    });
+}
+
+function buggy4(){
+    $.get( "examples/buggy4.txt", function( data ) {
+        editor.setValue(data);
+    });
+}

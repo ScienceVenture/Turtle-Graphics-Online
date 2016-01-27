@@ -1,0 +1,9 @@
+import turtle
+t = turtle.Turtle()
+
+# This program draws a spiral
+# but it goes off the screen!
+
+for x in range(100):
+    t.left(5)
+    t.forward(x)

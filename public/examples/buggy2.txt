@@ -1,0 +1,10 @@
+import turtle
+t = turtle.Turtle()
+
+# this program should draw
+# a square... but it doesn't
+# quite finish
+
+for x in range(3):
+    t.forward(100)
+    t.left(90)

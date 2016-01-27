@@ -1,0 +1,10 @@
+import turtle
+t = turtle.Turtle()
+
+# This program should
+# draw a spiral, instead
+# it draws a circle!
+
+for x in range(100):
+    t.left(25)
+    t.forward(10)
